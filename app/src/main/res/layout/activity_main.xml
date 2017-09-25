@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    tools:context="com.example.oooooon.myjokesapp.MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="121dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="51dp"
+        android:textSize="14sp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="157dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="51dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleSmallInverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="93dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="39dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="93dp" />
+
+    <ScrollView
+        android:layout_width="116dp"
+        android:layout_height="217dp"
+        android:layout_marginStart="29dp"
+        android:background="@android:color/holo_blue_dark"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:id="@+id/scrollView2"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="48dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="29dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/b_message2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/holo_green_light"
+                android:text="@string/fifth_joke"
+                android:typeface="monospace"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/b_message1"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1"
+                tools:layout_constraintTop_creator="1" />
+
+            <Button
+                android:id="@+id/b_toast1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.09"
+                android:background="@android:color/holo_purple"
+                android:text="@string/first_joke"
+                android:typeface="monospace"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1"
+                tools:layout_constraintTop_creator="1" />
+
+            <Button
+                android:id="@+id/b_toast2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="?android:attr/colorLongPressedHighlight"
+                android:elevation="0dp"
+                android:text="@string/second_joke"
+                android:typeface="monospace"
+                app:layout_constraintLeft_toLeftOf="@+id/b_toast1"
+                app:layout_constraintTop_toBottomOf="@+id/b_toast1"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintTop_creator="1" />
+
+            <Button
+                android:id="@+id/b_message1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/holo_blue_bright"
+                android:text="@string/fourth_joke"
+                android:typeface="monospace"
+                app:layout_constraintRight_toRightOf="@+id/b_toast3"
+                app:layout_constraintTop_toBottomOf="@+id/b_toast3"
+                tools:layout_constraintRight_creator="1"
+                tools:layout_constraintTop_creator="1" />
+
+            <Button
+                android:id="@+id/b_message3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.13"
+                android:background="@color/colorAccent"
+                android:text="@string/sixth_joke"
+                android:typeface="monospace"
+                app:layout_constraintRight_toRightOf="@+id/b_message2"
+                app:layout_constraintTop_toBottomOf="@+id/b_message2"
+                tools:layout_constraintRight_creator="1"
+                tools:layout_constraintTop_creator="1" />
+
+            <Button
+                android:id="@+id/b_toast3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/holo_orange_light"
+                android:text="@string/third_joke"
+                android:typeface="monospace"
+                app:layout_constraintRight_toRightOf="@+id/b_message2"
+                app:layout_constraintTop_toBottomOf="@+id/b_toast2"
+                tools:layout_constraintRight_creator="1"
+                tools:layout_constraintTop_creator="1" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Jokes app</string>
+    <string name="first_joke">I am not lazy</string>
+    <string name="second_joke">I love my job</string>
+    <string name="third_joke">A balanced diet</string>
+    <string name="fourth_joke">To err is human</string>
+    <string name="fifth_joke">Only young once</string>
+    <string name="sixth_joke">Smile today!</string>
+    <string name="answerOne">I\'m just very relaxed</string>
+    <string name="answerTwo">especially on weekends</string>
+    <string name="answerThree">is a cupcake in each hand</string>
+    <string name="answerFour">To blame someone else is even more human!</string>
+    <string name="answerFive">Immature forever</string>
+    <string name="answerSix">Tomorrow could be worse!</string>
+
+</resources>
